@@ -107,12 +107,13 @@ if __name__ == '__main__':
     #options are: "Covid Daily Parent Form" or "Remote Student Attendance AM"
 
 
-    ## copy below line for each kid, as they appear "Firstname, Lastnanme" - please note space after comma
-    automate_form('Regev, Idan',"Covid Daily Parent Form")
-    automate_form('Regev, Tevel',"Covid Daily Parent Form")
-    automate_form('Regev, Idan',"Remote Student Attendance AM")
-    automate_form('Regev, Tevel',"Remote Student Attendance AM")
+    ## copy below line for each kid, as they appear "Lastname, Firstnanme" - please note space after comma
+    automate_form('Last, First',"Covid Daily Parent Form")
+    automate_form('Last, First2',"Covid Daily Parent Form")
+    automate_form('Last, First',"Remote Student Attendance AM")
+    automate_form('Last, First2',"Remote Student Attendance AM")
 
 
     browser.close()
 
+    print(f'Done!')
